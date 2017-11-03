@@ -44,7 +44,7 @@ def call_api_interface(api_postSMS, module, action):
 
 
 
-file="/tmp/new_pins_26.csv"
+file="/tmp/new_pins_28.csv"
 
 readfile= open(file)
 
@@ -84,8 +84,8 @@ if __name__=="__main__":
     #print(msgs)
 
     api_postSMS = {
-        "api_key": "61b87502373649d09c01cffe9e1dcbd3",
-        "service_provider_id": "3006bee1f78047e8811f536122e2877a",
+        "api_key": "wu4lS8AVAEgH0tpJ2KtyQzJvWuxJVfjIE3k1DZDGdno",
+        "service_provider_id": "daeecafbc77843b49d2473babcc60ee6",
         "source": "api",
         "callback": 1,
         "routeID": "8f1df72288915292efcf456df43e5b20",

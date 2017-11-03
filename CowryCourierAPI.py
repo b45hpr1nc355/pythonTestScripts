@@ -116,10 +116,10 @@ def depositFunds():
         'api_key': '61b87502373649d09c01cffe9e1dcbd3',
         'service_provider_id': '3006bee1f78047e8811f536122e2877a',
         'source': 'api',
-        'provider_id':'4',
-        'payment_provider_id':'4',
-        'account_number': '233200313710',
-        'amount': 0.5,
+        'provider_id':'3',
+        'payment_provider_id':'3',
+        'account_number': '233271004649',
+        'amount': 0.2,
         'currency': 'GHS',
         'narration':'',
         'transaction_id': '6578767',
@@ -198,8 +198,8 @@ if __name__=='__main__':
     accLook=accountLookup()
     call_api_interface(accLook, "cowrycourier", "accountLookup")
 
-    #depFunds=depositFunds()
-    #call_api_interface(depFunds, "cowrycourier", "depositFunds")
+    depFunds=depositFunds()
+    call_api_interface(depFunds, "cowrycourier", "depositFunds")
 
     
 
