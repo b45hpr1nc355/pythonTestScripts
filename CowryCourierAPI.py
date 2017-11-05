@@ -147,20 +147,18 @@ def withdrawFunds():
         'service_provider_id': '3006bee1f78047e8811f536122e2877a',
         'source': 'api',
         'payment_provider_id': '4',
-        'account_number': '0200313710',
+        'account_number': '233200313710',
         'amount': '0.5',
         'currency': 'GHS',
         'narration':'',
         'transaction_id': '17872',
         'notify_payer_after_processing': 1,
         'debit_requester': 'GH4HUB',
-        'payer_msisdn': '0504169784',
-        'payer_email': 'miriam.aidoomensah@misika247.com',
-
-        'notify_recipient_on_success': 1,
-        'recipient_name': 'Baby Doe',
-        'recipient_msisdn': '0200313710',
-        'recipient_email': 'takyiwaa.dua@misika247.com',
+        'account_holder_fullname':'',
+        'account_holder_msisdn': '0200313710',
+        'account_holder_email': 'takyiwaa.dua@misika247.com',
+        'notify_holder_on_success': 1,
+        'notification_source': 'GH4HUB',
     }
     #print "Amount received: %s" %str(debitFunds)
 
