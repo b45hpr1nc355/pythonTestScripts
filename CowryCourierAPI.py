@@ -196,8 +196,8 @@ if __name__=='__main__':
     accLook=accountLookup()
     call_api_interface(accLook, "cowrycourier", "accountLookup")
 
-    depFunds=depositFunds()
-    call_api_interface(depFunds, "cowrycourier", "depositFunds")
+    #depFunds=depositFunds()
+    #call_api_interface(depFunds, "cowrycourier", "depositFunds")
 
     
 

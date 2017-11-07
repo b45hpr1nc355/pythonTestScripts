@@ -56,6 +56,7 @@ def call_api_interface(api_payMerchant, module, func):
 def listMerchants():
     viewBillers= {
         'api_key': '61b87502373649d09c01cffe9e1dcbd3',
+        #'api_secret': '3006bee1f78047e8811f536122e2877a',
         'service_provider_id': '3006bee1f78047e8811f536122e2877a',
         'source': 'api'
     }
@@ -67,6 +68,7 @@ def listMerchants():
 def listMerchantProducts():
     listProds= {
         'api_key': '61b87502373649d09c01cffe9e1dcbd3',
+        #'api_secret': '3006bee1f78047e8811f536122e2877a',
         'service_provider_id': '3006bee1f78047e8811f536122e2877a',
         'source': 'api',
         'merchant_id': '3'
@@ -156,8 +158,8 @@ if __name__ == "__main__":
     call_api_interface(listProds, "cowrypay", "listMerchantProducts")
 
 
-    #checkBalance = checkProductBalance()
-    #call_api_interface(checkBalance, "cowrypay", "checkProductBalance")
+    checkBalance = checkProductBalance()
+    call_api_interface(checkBalance, "cowrypay", "checkProductBalance")
 
     #checkAccount = lookUpAccount()
     #call_api_interface(checkAccount, "cowrypay", "lookupAccount")
