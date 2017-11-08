@@ -113,8 +113,8 @@ def accountLookup():
 
 def depositFunds():
     depFunds= {
-        'api_key': '61b87502373649d09c01cffe9e1dcbd3',
-        'service_provider_id': '3006bee1f78047e8811f536122e2877a',
+        'api_key': 'wu4lS8AVAEgH0tpJ2KtyQzJvWuxJVfjIE3k1DZDGdno',
+        'service_provider_id': 'daeecafbc77843b49d2473babcc60ee6',
         'source': 'api',
         'provider_id':'3',
         'payment_provider_id':'3',
@@ -193,11 +193,11 @@ if __name__=='__main__':
     custAccBal=checkAccountBalance()
     call_api_interface(custAccBal, "cowrycourier", "checkAccountBalance")
 
-    accLook=accountLookup()
-    call_api_interface(accLook, "cowrycourier", "accountLookup")
+    #accLook=accountLookup()
+    #call_api_interface(accLook, "cowrycourier", "accountLookup")
 
-    #depFunds=depositFunds()
-    #call_api_interface(depFunds, "cowrycourier", "depositFunds")
+    depFunds=depositFunds()
+    call_api_interface(depFunds, "cowrycourier", "depositFunds")
 
     
 
