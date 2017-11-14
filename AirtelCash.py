@@ -3,7 +3,7 @@
 import requests
 
 payload={"msisdn":"233561077767",
-         "amount":"0.5",
+         "amount":"1",
          "mno":"Airtel",
          "token":"" }
 

@@ -85,10 +85,10 @@ def postBulkMessage():
         "service_provider_id": "3006bee1f78047e8811f536122e2877a",
         "source": "api",
         "routeID": "8f1df72288915292efcf456df43e5b20",
-        "messages": [{"messageID": "4c2c60d1", "text": "Tests", "phonenumber": "233504169784"},
-                     {"messageID": "d87801fe", "text": "Tests", "phonenumber": "233200313710"},
-                     {"messageID": "d87801fe", "text": "Tests", "phonenumber": "233208365428"}],
-        "senderID": "Cowry",
+        "messages": [{"messageID": "4c2c60d1", "text": "Tests from MainOne", "phonenumber": "233504169784"},
+                     {"messageID": "d87801fe", "text": "Tests from MainOne", "phonenumber": "233200313710"},
+                     {"messageID": "d87801fe", "text": "Tests from MainOne", "phonenumber": "233555055956"}],
+        "senderID": "Cowry Tests",
         "messageType": "SMS",
         "callback": 1,
         "dlr-url": " ",
@@ -105,11 +105,11 @@ def postMessage():
         "service_provider_id": "3006bee1f78047e8811f536122e2877a",
         "source": "api",
         "routeID": "8f1df72288915292efcf456df43e5b20",
-        "text": "47000 square meters of covered warehouse and 80,000 square meters of open space warehouse with warehouse management system to warehouse your cargo as well as collateral management.",
+        "text": "ADB Tests",
         "senderID": "Cowry",
         "messageID": "4c2c60d1",
         "messageType": "SMS",
-        "phonenumber": "233504169784",
+        "phonenumber": "233555055956",
         "callback": 1,
         "dlr-url": " ",
         "priority-level": "HIGH"
@@ -144,8 +144,8 @@ if __name__ == "__main__":
     getSMSr=getRoutes()
     call_api_interface(getSMSr, "cowrygong", "getRoutes")
 
-   # postSMS=postMessage()
-   # call_api_interface(postSMS, "cowrygong", "postMessage")
+    #postSMS=postMessage()
+    #call_api_interface(postSMS, "cowrygong", "postMessage")
 
     postBSMS=postBulkMessage()
     call_api_interface(postBSMS, "cowrygong", "postBulkMessage")
