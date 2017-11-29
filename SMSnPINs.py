@@ -44,7 +44,7 @@ def call_api_interface(api_postSMS, module, action):
 
 
 
-file="/tmp/new_pins_33.csv"
+file="/tmp/new_pins_35.csv"
 
 readfile= open(file)
 
