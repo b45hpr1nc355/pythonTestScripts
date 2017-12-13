@@ -14,7 +14,7 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 PROTOCOL = "https"
-HOST = "api.misika247.com"
+HOST = "sandbox.misika247.com" # "api.misika247.com"
 PORT = "24799"
 
 
@@ -60,8 +60,8 @@ def call_api_interface(api_postSMS, module, action):
 
 def getBalance():
     checkSMSbal = {
-        "api_key": "61b87502373649d09c01cffe9e1dcbd3",
-        "service_provider_id": "3006bee1f78047e8811f536122e2877a",
+        "api_key": "bNm0YN3P0lTwTsNI6bHnkLbghK09jjrw7bmuGERG1fiqMgXkqPRdITAnsAI", # "61b87502373649d09c01cffe9e1dcbd3",
+        "service_provider_id": "TYrDfyu1P7YPDXtE6uMFT3LRPKZU2kL7EmmsWI5jqg", # "3006bee1f78047e8811f536122e2877a",
         "source": "api"
     }
     print("Your SMS balance: %s" % str(checkSMSbal))
@@ -71,8 +71,8 @@ def getBalance():
 
 def getRoutes():
     getSMSroutes = {
-        "api_key": "61b87502373649d09c01cffe9e1dcbd3",
-        "service_provider_id": "3006bee1f78047e8811f536122e2877a",
+        "api_key": "bNm0YN3P0lTwTsNI6bHnkLbghK09jjrw7bmuGERG1fiqMgXkqPRdITAnsAI", # "61b87502373649d09c01cffe9e1dcbd3",
+        "service_provider_id": "TYrDfyu1P7YPDXtE6uMFT3LRPKZU2kL7EmmsWI5jqg", # "3006bee1f78047e8811f536122e2877a",
         "source": "api"
     }
     print("The configured SMS routes: %s" % str(getSMSroutes))
@@ -81,14 +81,14 @@ def getRoutes():
 
 def postBulkMessage():
     postbulkSMS = {
-        "api_key": "61b87502373649d09c01cffe9e1dcbd3",
-        "service_provider_id": "3006bee1f78047e8811f536122e2877a",
+        "api_key": "bNm0YN3P0lTwTsNI6bHnkLbghK09jjrw7bmuGERG1fiqMgXkqPRdITAnsAI", #"61b87502373649d09c01cffe9e1dcbd3",
+        "service_provider_id": "TYrDfyu1P7YPDXtE6uMFT3LRPKZU2kL7EmmsWI5jqg", #"3006bee1f78047e8811f536122e2877a",
         "source": "api",
-        "routeID": "8f1df72288915292efcf456df43e5b20",
-        "messages": [{"messageID": "4c2c60d1", "text": "Tests from MainOne", "phonenumber": "233504169784"},
-                     {"messageID": "d87801fe", "text": "Tests from MainOne", "phonenumber": "233200313710"},
-                     {"messageID": "d87801fe", "text": "Tests from MainOne", "phonenumber": "233555055956"}],
-        "senderID": "Cowry Tests",
+        "routeID": "297b53667470e24ca41a18c8105f6260", # "8f1df72288915292efcf456df43e5b20",
+        "messages": [{"messageID": "4c2c60d1", "text": "Tests from Petra", "phonenumber": "233504169784"},
+                     {"messageID": "d87801fe", "text": "Tests from Petra", "phonenumber": "233200313710"},
+                     {"messageID": "d87801fe", "text": "Tests from Petra", "phonenumber": "233555055956"}],
+        "senderID": "Petra",
         "messageType": "SMS",
         "callback": 1,
         "dlr-url": " ",
@@ -101,17 +101,18 @@ def postBulkMessage():
 
 def postMessage():
     postMess = {
-        "api_key": "61b87502373649d09c01cffe9e1dcbd3",
-        "service_provider_id": "3006bee1f78047e8811f536122e2877a",
+        "api_key": "bNm0YN3P0lTwTsNI6bHnkLbghK09jjrw7bmuGERG1fiqMgXkqPRdITAnsAI", #"61b87502373649d09c01cffe9e1dcbd3",
+        #"api_secret":"TYrDfyu1P7YPDXtE6uMFT3LRPKZU2kL7EmmsWI5jqg",
+        "service_provider_id": "TYrDfyu1P7YPDXtE6uMFT3LRPKZU2kL7EmmsWI5jqg",  #"3006bee1f78047e8811f536122e2877a",
+        "client_id":"",
         "source": "api",
-        "routeID": "8f1df72288915292efcf456df43e5b20",
-        "text": "ADB Tests",
-        "senderID": "Cowry",
+        "callback": 1,
+        "routeID": "297b53667470e24ca41a18c8105f6260", # "8f1df72288915292efcf456df43e5b20",
+        "text": "Petra Tests",
+        "senderID": "Petra",
         "messageID": "4c2c60d1",
         "messageType": "SMS",
-        "phonenumber": "233555055956",
-        "callback": 1,
-        "dlr-url": " ",
+        "phonenumber": "233200313710",
         "priority-level": "HIGH"
     }
     print("Your SMS creds: %s" % str(postMess))
@@ -121,8 +122,8 @@ def postMessage():
 
 def getMessageStatus():
     getStatus = {
-        "api_key": "61b87502373649d09c01cffe9e1dcbd3",
-        "service_provider_id": "3006bee1f78047e8811f536122e2877a",
+        "api_key": "bNm0YN3P0lTwTsNI6bHnkLbghK09jjrw7bmuGERG1fiqMgXkqPRdITAnsAI", # "61b87502373649d09c01cffe9e1dcbd3",
+        "service_provider_id": "TYrDfyu1P7YPDXtE6uMFT3LRPKZU2kL7EmmsWI5jqg",  # "3006bee1f78047e8811f536122e2877a",
         "source": "api",
         "messageID": "4c2c60d1"
     }
@@ -141,11 +142,11 @@ if __name__ == "__main__":
     #checkSMSBal = getBalance()
     #call_api_interface(checkSMSBal, "cowrygong", "getBalance")
 
-    getSMSr=getRoutes()
-    call_api_interface(getSMSr, "cowrygong", "getRoutes")
+    #getSMSr=getRoutes()
+    #call_api_interface(getSMSr, "cowrygong", "getRoutes")
 
-    #postSMS=postMessage()
-    #call_api_interface(postSMS, "cowrygong", "postMessage")
+    postSMS=postMessage()
+    call_api_interface(postSMS, "cowrygong", "postMessage")
 
     postBSMS=postBulkMessage()
     call_api_interface(postBSMS, "cowrygong", "postBulkMessage")
