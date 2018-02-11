@@ -14,7 +14,7 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 PROTOCOL = "https"
-HOST = "sandbox.misika247.com" # "api.misika247.com"
+HOST = "api.misika247.com", #"sandbox.misika247.com" # "api.misika247.com"
 PORT = "24799"
 
 
@@ -61,8 +61,8 @@ def call_api_interface(api_postSMS, module, action):
 
 def getBalance():
     checkSMSbal = {
-        "api_key": "bNm0YN3P0lTwTsNI6bHnkLbghK09jjrw7bmuGERG1fiqMgXkqPRdITAnsAI", # "61b87502373649d09c01cffe9e1dcbd3",
-        "api_secret": "TYrDfyu1P7YPDXtE6uMFT3LRPKZU2kL7EmmsWI5jqg", # "3006bee1f78047e8811f536122e2877a",    #service_provider_id
+        "api_key": "WTy9TlKv3mo0QuhOC9XHK5RgXTCvRMQAwhFSkQDUr6jdfQI6osjfZRbHo", #"bNm0YN3P0lTwTsNI6bHnkLbghK09jjrw7bmuGERG1fiqMgXkqPRdITAnsAI", #"61b87502373649d09c01cffe9e1dcbd3",
+        "service_provider_id": "dl7z5Oxgwn6to3JAo1gVY3jNjjG3dnIHZaQlLxios", #"TYrDfyu1P7YPDXtE6uMFT3LRPKZU2kL7EmmsWI5jqg", #"3006bee1f78047e8811f536122e2877a"
         "client_id":"000001",
         "source": "api"
         }
@@ -73,9 +73,9 @@ def getBalance():
 
 def getRoutes():
     getSMSroutes = {
-        "api_key": "bNm0YN3P0lTwTsNI6bHnkLbghK09jjrw7bmuGERG1fiqMgXkqPRdITAnsAI", # "61b87502373649d09c01cffe9e1dcbd3",
-        "api_secret": "TYrDfyu1P7YPDXtE6uMFT3LRPKZU2kL7EmmsWI5jqg", # "3006bee1f78047e8811f536122e2877a",  #service_provider_id
-        "client_id":"000001",
+        "api_key": "WTy9TlKv3mo0QuhOC9XHK5RgXTCvRMQAwhFSkQDUr6jdfQI6osjfZRbHo",  #"bNm0YN3P0lTwTsNI6bHnkLbghK09jjrw7bmuGERG1fiqMgXkqPRdITAnsAI", #"61b87502373649d09c01cffe9e1dcbd3",
+        "service_provider_id": "dl7z5Oxgwn6to3JAo1gVY3jNjjG3dnIHZaQlLxios", #"TYrDfyu1P7YPDXtE6uMFT3LRPKZU2kL7EmmsWI5jqg", #"3006bee1f78047e8811f536122e2877a",
+        #"client_id":"000001",
         "source": "api"
       }
     return getSMSroutes
@@ -185,8 +185,8 @@ if __name__ == "__main__":
     print("")
     print ("UUID: " + create_uuid())
 
-    # getLoginDets= generateAPIkey()
-    # call_api_interface(getLoginDets, "cowrygong", "sms")
+    #getLoginDets= generateAPIkey()
+    #call_api_interface(getLoginDets, "cowrygong", "sms")
 
     checkSMSBal = getBalance()
     call_api_interface(checkSMSBal, "cowrygong", "getBalance")
